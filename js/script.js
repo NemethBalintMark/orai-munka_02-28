@@ -1,9 +1,6 @@
-<<<<<<< Updated upstream
 const betuk = "aábcdeéfghiíjklmnoóöőpqrstuúüűvwxyz";
-=======
 
 const szamok = "0123456789";
->>>>>>> Stashed changes
 function teszt() {
     var jelszo = document.querySelector(".jelszo").value;
     var progress = document.querySelector(".progress");
@@ -12,7 +9,6 @@ function teszt() {
 
     jelszo = jelszo.trim();
 
-<<<<<<< Updated upstream
     if (jelszo.length >= 8) {
         jelszoSzint++;
     }
@@ -36,7 +32,6 @@ function teszt() {
         }
 
         i++;
-=======
     vege = false;
     i = 0;
     while(!vege){
@@ -46,6 +41,6 @@ function teszt() {
         } else{
             i++;
         }
->>>>>>> Stashed changes
     }
+}
 }
