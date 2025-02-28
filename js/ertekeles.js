@@ -5,6 +5,12 @@ function ertekel(clickedValue) {
     ertekeles = 0;
     var csilagok = document.querySelectorAll("i");
 
+    for (var i = 0; i < csilagok.length; i++) {
+        csilagok[i].classList.remove("bi-star-fill")
+        csilagok[i].classList.add("bi-star");
+        csilagok[i].style.color = "#ccc";
+    }
+
     for (var i = clickedValue - 1; i >= 0; i--) {
         csilagok[i].classList.remove("bi-star")
         csilagok[i].classList.add("bi-star-fill");
