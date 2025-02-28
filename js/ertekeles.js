@@ -1,6 +1,7 @@
 var ertekelesek = [];
 
 function ertekel(clickedValue) {
+    ertekeles = 0;
     var csilagok = document.querySelectorAll("i");
 
     for (var i = clickedValue - 1; i >= 0; i--) {
