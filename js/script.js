@@ -1,4 +1,6 @@
 const betuk = "aábcdeéfghiíjklmnoóöőpqrstuúüűvwxyz";
+const szamok = "0123456789";
+
 function teszt() {
     var jelszo = document.querySelector(".jelszo").value;
     var progress = document.querySelector(".progress");
@@ -32,5 +34,14 @@ function teszt() {
         i++;
     }
 
-
+    vege = false;
+    i = 0;
+    while(!vege){
+        if (szamok.includes(jelszo[i])){
+            jelszoSzint++;
+            vege = true;
+        } else{
+            i++;
+        }
+    }
 }
