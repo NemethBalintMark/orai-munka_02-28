@@ -38,11 +38,17 @@ function teszt() {
         if (szamok.includes(jelszo[i])){
             jelszoSzint++;
             vege = true;
+            break
         } else{
-            i++;
+            if (i > jelszo.length - 1){
+                break
+            } else{
+                i++;
+            }
         }
     }
 
+<<<<<<< Updated upstream
     vege = false;
     i = 0;
 
@@ -60,3 +66,7 @@ function teszt() {
 }
 
 progressBar.style.width = "50%";
+=======
+    progressBar.style.width = "50%";
+}
+>>>>>>> Stashed changes
