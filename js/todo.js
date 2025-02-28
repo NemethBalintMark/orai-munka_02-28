@@ -30,6 +30,24 @@ function hozzaad() {
 
         feladatok.sort(function (a, b) {return b.p - a.p});
 
-        
+        if (szint == 0) {
+            row.style.backgroundColor = "green";
+        } else if (szint == 1) {
+            row.style.backgroundColor = "yellow";
+        } else if (szint == 2) {
+            row.style.backgroundColor = "red";
+        }
+
+        for (var i = 0; i < feladatok.length; i++) {
+            th.innerHTML = i;
+            td = feladatok[i].f;
+            td2 = feladatok[i].p;
+
+            row.appendChild(th);
+            row.appendChild(td);
+            row.appendChild(td2);
+
+            tbody.innerHTML += row;
+        }
     }
 }
