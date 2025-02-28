@@ -14,7 +14,7 @@
     <main>
         <section>
             <div class="container">
-                <div class="row">
+                <div class="row motor">
                     <div class="col-lg-6">
                         <figure>
                             <p><img src="img/motor.jpg" width="400" alt="Motor" title="Motor"></p>
@@ -35,11 +35,6 @@
                             <li>Műszaki vizsga érvényes: 2026</li>
                         </ul>
                     </div>
-                    
-                    <div class="mb-3">
-                        <label class="form-label">Jelszó tesztelés: </label>
-                        <input type="password" class="form-control jelszo">
-                    </div>
                 </div>
                 
                 <div class="d-flex">
@@ -49,7 +44,7 @@
                     <button onclick="ertekel(this.value)" value="4"><i class="bi bi-star"></i></button>
                     <button onclick="ertekel(this.value)" value="5"><i class="bi bi-star"></i></button>
                 </div>
-                <div class="mb-3">
+                <div class="mb-3 text-center">
                     <button class="btn btn-secondary my-3" onclick="mentes()">Értékelés</button>
                 </div>
             </div>
@@ -60,6 +55,8 @@
                     <thead>
                       <tr>
                         <th scope="col">#</th>
+                        <th scope="col">Név</th>
+                        <th scope="col">Komment</th>
                         <th scope="col">Értékelés</th>
                       </tr>
                     </thead>
