@@ -20,6 +20,10 @@ function hozzaad() {
     if (szint == null || feladat == "") {
         alert("Adjon meg egy érvényes bemenetet!");
     } else {
-        
+        var row = document.createElement("tr");
+        var th = document.createElement("th");
+        th.scope = "row";
+        var td = document.createElement("td");
+        var td2 = document.createElement("td2");
     }
 }
