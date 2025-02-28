@@ -1,10 +1,10 @@
 var feladatok = [];
 
 function getSzint() {
-    var szintek = document.querySelectorAll(".szint");
+    var radios = document.querySelectorAll(".form-check-input");
 
-    for (var i = 0; i < szintek; i++) {
-        if (szintek[i].checked) {
+    for (var i = 0; i < radios.length; i++) {
+        if (radios[i].checked) {
             return i;
         }
     }
@@ -25,8 +25,11 @@ function hozzaad() {
         th.scope = "row";
         var td = document.createElement("td");
         var td2 = document.createElement("td");
+        
+        tbody.innerHTML = "";
 
-        alert(feladat[0].p);
+        feladatok.sort(function (a, b) {return b.p - a.p});
 
+        
     }
 }
