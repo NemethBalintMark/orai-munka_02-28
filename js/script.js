@@ -48,7 +48,6 @@ function teszt() {
         }
     }
 
-<<<<<<< Updated upstream
     vege = false;
     i = 0;
 
@@ -66,7 +65,3 @@ function teszt() {
 }
 
 progressBar.style.width = "50%";
-=======
-    progressBar.style.width = "50%";
-}
->>>>>>> Stashed changes
