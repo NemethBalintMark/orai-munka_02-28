@@ -60,6 +60,7 @@ function teszt() {
             vege = true;
         }
     }
+<<<<<<< Updated upstream
     
     
 }
@@ -67,3 +68,9 @@ function teszt() {
 progressBar.style.width = "50%";
 
 
+=======
+
+    document.querySelector(".kiIr").innerHTML = jelszoSzint;
+    
+}
+>>>>>>> Stashed changes
