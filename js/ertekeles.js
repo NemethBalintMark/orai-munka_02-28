@@ -1,4 +1,6 @@
 var ertekelesek = [];
+var nevek = [];
+var kommentek = [];
 var ertekeles = 0;
 
 function ertekel(clickedValue) {
@@ -27,9 +29,11 @@ function mentes(){
     nev = nev.trim();
     comment = comment.trim();
     if (ertekeles == 0 && nev == "", comment == ""){
-        alert("Hibás input!");
+        alert("Hibás bemenet!");
     } else{
         ertekelesek.push(ertekeles);
+        kommentek.push(comment);
+        nevek.push(nev);
         for (let i = 0; i < ertekelesek.length; i++){
             tbody.innerHTML += `<tr>
                                     <th scope="row">${i + 1}</th>
