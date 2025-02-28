@@ -14,3 +14,11 @@ button{
     background-color: transparent;
     border: none;
 }
+
+figcaption {
+    margin-left: 95px;
+}
+
+.motor {
+    margin-left: 70px;
+}
