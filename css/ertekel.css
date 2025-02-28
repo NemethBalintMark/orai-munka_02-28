@@ -9,3 +9,8 @@
 .d-flex{
     justify-content: center;
 }
+
+button{
+    background-color: transparent;
+    border: none;
+}
