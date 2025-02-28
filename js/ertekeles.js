@@ -37,7 +37,9 @@ function mentes(){
         for (let i = 0; i < ertekelesek.length; i++){
             tbody.innerHTML += `<tr>
                                     <th scope="row">${i + 1}</th>
+                                    <td>${nevek[i]}</td>
                                     <td>${ertekelesek[i]}</td>
+                                    <td>${kommentek[i]}</td>
                                 </tr>`
         }
     }
