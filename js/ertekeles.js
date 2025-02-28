@@ -21,9 +21,13 @@ function ertekel(clickedValue) {
 
 function mentes(){
     var tbody = document.querySelector("tbody");
+    var nev = document.querySelector(".nev").value;
+    var comment = document.querySelector(".comment").value;
     tbody.innerHTML = ""
-    if (ertekeles == 0){
-        alert("Adjon meg egy értékelést!");
+    nev = nev.trim();
+    comment = comment.trim();
+    if (ertekeles == 0 && nev == "", comment == ""){
+        alert("Hibás input!");
     } else{
         ertekelesek.push(ertekeles);
         for (let i = 0; i < ertekelesek.length; i++){
