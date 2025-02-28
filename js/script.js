@@ -51,7 +51,7 @@ function teszt() {
     vege = false;
     i = 0;
 
-    while (vege) {
+    while (!vege) {
         if (!betuk.includes(jelszo[i].toLowerCase()) && !szamok.includes(jelszo[i]) && jelszo[i] != 34 && jelszo[i] != 39) {
             vege = true;
         } else if (i < jelszo.length - 1) {
@@ -60,8 +60,10 @@ function teszt() {
             vege = true;
         }
     }
-
+    
     
 }
 
 progressBar.style.width = "50%";
+
+
