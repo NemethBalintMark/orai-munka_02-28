@@ -21,33 +21,28 @@ function hozzaad() {
         feladatok.push({p: szint, f: feladat});
 
         var row = document.createElement("tr");
-        var th = document.createElement("th");
-        th.scope = "row";
-        var td = document.createElement("td");
-        var td2 = document.createElement("td");
         
         tbody.innerHTML = "";
 
         feladatok.sort(function (a, b) {return b.p - a.p});
 
-        if (szint == 0) {
-            row.style.backgroundColor = "green";
-        } else if (szint == 1) {
-            row.style.backgroundColor = "yellow";
-        } else if (szint == 2) {
-            row.style.backgroundColor = "red";
-        }
+        
 
         for (var i = 0; i < feladatok.length; i++) {
-            th.innerHTML = i;
-            td = feladatok[i].f;
-            td2 = feladatok[i].p;
+            if (feladatok[i].p == 0) {
+                row.style.backgroundColor = "green";
+            } else if (feladatok[i].p == 1) {
+                row.style.backgroundColor = "yellow";
+            } else if (feladatok[i].p == 2) {
+                row.style.backgroundColor = "red";
+            }
 
-            row.appendChild(th);
-            row.appendChild(td);
-            row.appendChild(td2);
+            row.innerHTML = `
+            <th scope="row">${i + 1}</th>
+            <td>${feladatok[i].f}</td>
+            <td>${feladatok[i].p}</td>`
 
-            tbody.innerHTML += row;
+            tbody.appendChild(row);
         }
     }
 }
