@@ -1,3 +1,5 @@
+var feladatok = [];
+
 function getSzint() {
     var szintek = document.querySelectorAll(".szint");
 
