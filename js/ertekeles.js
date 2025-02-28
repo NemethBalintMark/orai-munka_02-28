@@ -22,7 +22,7 @@ function mentes(){
         ertekelesek.push(ertekeles);
         for (let i = 0; i < ertekelesek.length; i++){
             tbody.innerHTML += `<tr>
-                                    <th scope="row">${ertekelesek.length}</th>
+                                    <th scope="row">${i + 1}</th>
                                     <td>${ertekelesek[i]}</td>
                                 </tr>`
         }
