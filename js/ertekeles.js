@@ -38,8 +38,8 @@ function mentes(){
             tbody.innerHTML += `<tr>
                                     <th scope="row">${i + 1}</th>
                                     <td>${nevek[i]}</td>
-                                    <td>${ertekelesek[i]}</td>
                                     <td>${kommentek[i]}</td>
+                                    <td>${ertekelesek[i]}</td>
                                 </tr>`
         }
     }
