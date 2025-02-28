@@ -18,20 +18,18 @@ function teszt() {
     var kisEsNagyBetu = 0;
 
     while(!vege) {
-        if (jelszo.includes(betuk[i])) {
+        if (betuk.includes(jelszo[i])) {
             kisEsNagyBetu++;
-        }
-
-        if (jelszo.includes(betuk.toUpperCase()[i])) {
+        }else if (betuk.toUpperCase().includes(jelszo[i])) {
             kisEsNagyBetu++;
-        }
-
-        if (kisEsNagyBetu == 2) {
+        } else if (kisEsNagyBetu == 2) {
             jelszoSzint++;
-            vege = false;
+            vege = true;
+        }else if (i < betuk.length - 1) {
+            i++;
+        } else {
+            vege = true;
         }
-
-        i++;
     }
 
     vege = false;
@@ -44,4 +42,21 @@ function teszt() {
             i++;
         }
     }
+
+    vege = false;
+    i = 0;
+
+    while (vege) {
+        if (!betuk.includes(jelszo[i].toLowerCase()) && !szamok.includes(jelszo[i]) && jelszo[i] != 34 && jelszo[i] != 39) {
+            vege = true;
+        } else if (i < jelszo.length - 1) {
+            i++;
+        } else {
+            vege = true;
+        }
+    }
+
+    
 }
+
+progressBar.style.width = "50%";
