@@ -1,6 +1,11 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
-.csillag{
+.bi-star{
     color: #ccc;
-    font-size: 10px;
+    font-size: 18px;
+    margin: 5px;
+}
+
+.d-flex{
+    justify-content: center;
 }
